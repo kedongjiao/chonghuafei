@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>充话费</title>
+  <link rel="stylesheet" href="recharge.css">
+  <script src="recharge.js" defer></script>
+</head>
+<body>
+  <main class="recharge">
+    <section class="phone-row" aria-label="充值号码">
+      <div class="phone-field">
+        <label id="phone-label" for="phone">请输入手机号</label>
+        <input id="phone" type="tel" inputmode="numeric" autocomplete="off"
+               placeholder="请输入手机号">
+      </div>
+      <button id="default-contact" class="contact-button" type="button">
+        默认联系人
+        <span class="contact-icon" aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <fieldset class="amount-card" aria-labelledby="amount-title">
+      <h1 id="amount-title">充值金额</h1>
+      <div class="amount-grid">
+        <label><input type="radio" name="amount" value="10"><span>10元</span></label>
+        <label><input type="radio" name="amount" value="20"><span>20元</span></label>
+        <label><input type="radio" name="amount" value="30"><span>30元</span></label>
+        <label><input type="radio" name="amount" value="50"><span>50元</span></label>
+        <label><input type="radio" name="amount" value="100"><span>100元</span></label>
+        <label><input type="radio" name="amount" value="200"><span>200元</span></label>
+        <label><input type="radio" name="amount" value="300"><span>300元</span></label>
+        <label><input type="radio" name="amount" value="500"><span>500元</span></label>
+        <label><input type="radio" name="amount" value="1000"><span>1000元</span></label>
+      </div>
+    </fieldset>
+
+    <p id="hint" class="hint" role="status">选择一个金额开始充值</p>
+  </main>
+</body>
+</html>
