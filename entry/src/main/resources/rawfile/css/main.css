@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 1.08px;
+    color-scheme: light;
+    background-color: #fff;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 520px;
+    margin: 0 auto;
+    padding-bottom: clamp(24px, 9vh, 76px);
+    background-color: #f1f3f5;
+}
+
+.selectConcat {
+    display: flex;
+    gap: 12rem;
+    padding: 0 12rem;
+}
+
+.phone-field {
+    flex: 1;
+    min-width: 0;
+}
+
+#phone_tip {
+    display: block;
+    min-height: 24rem;
+    color: #626e79;
+    font-size: 12rem;
+}
+
+input[type='tel'] {
+    display: block;
+    width: 100%;
+    height: 36rem;
+    border: 0;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+    background-color: transparent;
+    color: #182431;
+    font-size: clamp(18px, 6vw, 24rem);
+}
+
+input[type='tel'][aria-invalid='true'] {
+    border-bottom-color: #b3261e;
+}
+
+#default-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+    border: 0;
+    background-color: transparent;
+    color: #626e79;
+    font-size: 12rem;
+    cursor: pointer;
+}
+
+#icon-select {
+    width: 24rem;
+    height: 24rem;
+}
+
+.amount-content {
+    margin-top: 16rem;
+    padding: 12rem;
+    border-radius: 24rem;
+    background-color: #fff;
+}
+
+.amount-tip {
+    color: #182431;
+    font-size: 16rem;
+    font-weight: 500;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 12rem;
+    margin-top: 12rem;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53rem;
+    border: 1rem solid rgba(24, 36, 49, 0.20);
+    border-radius: 8rem;
+    background-color: #fff;
+    color: #182431;
+    font-size: clamp(14px, 5.5vw, 21rem);
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.grid-item.selected {
+    border-color: #007DFF;
+    background-color: #007DFF;
+    color: #fff;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 2px solid #005abd;
+    outline-offset: 2px;
+}
+
+.bottom-tip {
+    margin-top: 8rem;
+    margin-left: 8rem;
+    color: rgba(24, 36, 49, 0.60);
+    font-size: 12rem;
+}
