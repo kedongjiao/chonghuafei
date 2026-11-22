@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>充话费</title>
+</head>
+
+<body>
+<main class="container">
+    <div class="selectConcat">
+        <div class="phone-field">
+            <label id="phone_tip" for="phone">请输入手机号</label>
+            <input type="tel" inputmode="numeric" id="phone" placeholder="请输入手机号">
+        </div>
+        <button id="default-contact" type="button">
+            默认联系人
+            <img id="icon-select" src="./img/ic_contacts.svg" alt="">
+        </button>
+    </div>
+    <section class="amount-content" aria-labelledby="amount-tip">
+        <h1 id="amount-tip" class="amount-tip">充值金额</h1>
+        <div class="grid-container">
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+            <button class="grid-item" type="button" aria-pressed="false"></button>
+        </div>
+    </section>
+    <div class="bottom-tip" role="status">选择一个金额开始充值</div>
+</main>
+<script src="./js/index.js"></script>
+</body>
+</html>

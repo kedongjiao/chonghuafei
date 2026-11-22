@@ -1,0 +1,13 @@
+.idea/
+.hvigor/
+.ohpm/
+oh_modules/
+build/
+.preview/
+local.properties
+*.iml
+*.hap
+*.app
+*.p12
+*.cer
+*.p7b
